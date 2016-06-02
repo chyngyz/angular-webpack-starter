@@ -1,0 +1,59 @@
+@mixin MQ($res) {
+    @if $res == 'LG' {
+        /* Large Devices, Wide Screens */
+        @media only screen and (min-width : 1200px) {
+            @content;
+        }
+
+    } @else if $res == 'MD' {
+        /* Medium Devices, Desktops */
+        @media only screen and (min-width : 992px) {
+            @content;
+        }
+    } @else if $res == 'SM' {
+        /* Small Devices, Tablets */
+        @media only screen and (min-width : 768px) {
+            @content;
+        }
+    } @else if $res == 'XS' {
+        /* Extra Small Devices, Phones */
+        @media only screen and (min-width : 480px) {
+            @content;
+        }
+    } @else {
+        /* Custom, iPhone Retina */
+        @media only screen and (min-width : $res + 'px') {
+            @content;
+        }
+    }
+}
+
+@mixin MQM($res) {
+    @if $res == 'LG' {
+        /* Large Devices, Wide Screens */
+        @media only screen and (max-width : 1200px) {
+            @content;
+        }
+
+    } @else if $res == 'MD' {
+        /* Medium Devices, Desktops */
+        @media only screen and (max-width : 992px) {
+            @content;
+        }
+    } @else if $res == 'SM' {
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+            @content;
+        }
+    } @else if $res == 'XS' {
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+            @content;
+        }
+    } @else {
+        /* Custom, iPhone Retina */
+        @media only screen and (max-width : $res + 'px') {
+            @content;
+        }
+    }
+}
