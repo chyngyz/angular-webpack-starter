@@ -1,14 +1,17 @@
 # Angular + Webpack Starter Project
 
-Yet another starter project for building Angular 1.x applications using Webpack. Consist of:
+Yet another starter project for building Angular 1.x applications using Webpack. Consists of:
 
 * ES6 support with babel
 * Dev server with live-reload
-* Production build, minify, uglify.
+* Production build, minify, uglify
 * Serve Production
 * Dependency injection using [ng-annotate-loader](https://github.com/huston007/ng-annotate-loader)
 * Sass
 * Third party libs: jQuery, MomentJs
+* Bootstrap - [Flatly Theme](http://bootswatch.com/flatly/)
+* Bourbon Mixins
+* Ionicons
 
 
 ### Quick start

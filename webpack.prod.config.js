@@ -59,6 +59,7 @@ module.exports = {
       template: './index.ejs',
       inject: false,
       favicon: 'favicon.ico',
+      mobile: true,
       baseHref: '/',
       minify: {
         collapseWhitespace: true,
